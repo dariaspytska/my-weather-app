@@ -63,7 +63,7 @@ function temperatureS(resq) {
 
 function displayWeatherCondition(response) {
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector("h2").innerHTML = `${+}Math.round(response.data.main.temp)`;
+  document.querySelector("h2").innerHTML = `+ ${Math.round(response.data.main.temp)}`;
 }
 
 function searchLocation(position) {
